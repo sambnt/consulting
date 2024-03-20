@@ -36,6 +36,9 @@ h1 {
     border-radius: 50%;
 }
 
+a {
+    color: var(--accent-color);
+}
 
 :root {
   --bg-color: #181a1b;
