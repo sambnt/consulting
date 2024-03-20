@@ -1,0 +1,11 @@
+body {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 3em auto;
+	max-width: 35em;
+        font-family: sans-serif;
+}
+
+h1 {
+    margin-bottom: 1.2em;
+}
