@@ -38,6 +38,15 @@ h1 {
     font-weight: 700;
 }
 
+.credits {
+    color: #757575;
+    font-size: 1rem;
+    text-decoration: underline;
+    background: none;
+    align-self: self-end;
+    margin-top: 1rem;
+}
+
 a {
     color: #000;
     text-decoration: none;
