@@ -172,3 +172,13 @@ mark.scroll-highlight {
     background-size: 100% 100%;
   }
 }
+
+section:last-child {
+    margin-bottom: 0rem;
+}
+
+.end {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
