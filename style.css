@@ -17,14 +17,6 @@ html {
     text-align: left;
 }
 
-.colored {
-  /* background: conic-gradient(var(--color-primary) 0 12%,var(--color-quaternary) 0 33%,var(--color-secondary) 0 55%,var(--color-tertiary) 0 70%,var(--color-primary) 0 100%); */
-  /* background-clip: text; */
-  /* color: transparent; */
-  /* background-size: 100%; */
-  /* padding: .3rem 0; */
-}
-
 body {
     margin: 0;
     font-size: 1.25rem;
@@ -91,43 +83,23 @@ section p {
 }
 
 #intro-img {
-    /* position: fixed; */
     float: right;
     right: 1rem;
     top: 0rem;
     margin-left: 1rem;
     margin-bottom: 3rem;
-    /* margin-left: 1rem; */
-    /* flex: 0 0 8rem; */
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
 }
 
 #me {
     height: 30rem;
-    /* height: 100%; */
-}
-
-.underline {
-  background:
-    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
-  background-size: 100% 0.1em, 0 0.1em;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 100ms;
-}
-
-.underline:hover,
-.underline:focus {
-  background-size: 0 0.1em, 100% 0.1em;
 }
 
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-name: wave-animation;  /* Refers to the name of the @keyframes element below */
   animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: 3;  /* Never stop waving :) */
+  animation-iteration-count: 3;
   transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
   display: inline-block;
 
@@ -150,11 +122,6 @@ section p {
     background-color: var(--color-primary);
     position: fixed;
     width: 1vw;
-    /* box-shadow: inset 1px 0px 1px #000; */
-    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset; */
-    /* box-shadow: rgba(0, 0, 0, 0.45) 1px 1px 40px 0px inset; */
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px inset; */
-    /* clip-path: inset(0px -15px 0px 0px); */
 }
 
 .border-right {
@@ -163,52 +130,13 @@ section p {
     position: fixed;
     right: 0;
     width: 1.5vw;
-    /* box-shadow: inset 1px 0px 1px #000; */
-    /* box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset; */
-    /* box-shadow: rgba(0, 0, 0, 0.45) 1px 1px 40px 0px inset; */
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px inset; */
-    /* clip-path: inset(0px -15px 0px 0px); */
 }
 
 .emphasise {
-    /* background-color: var(--color-primary); */
-    /* background-size: 20%; */
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 60%, var(--color-primary) 60%, var(--color-primary) 40%);
-    /* background: */
-    /*   linear-gradient(to right, var(--color-primary), var(--color-primary)); */
-    /* background-size: 100% 0.3em, 0 0.3em; */
-    /* background-position: 100% 100%, 0 100%; */
-    /* background-repeat: no-repeat; */
 }
-
-/* mark.scroll-highlight { */
-/*   background-size: 0 100%; */
-/*   background-repeat: no-repeat; */
-/*   background-color: transparent; */
-/*   /\* background-image: linear-gradient(purple, purple); *\/ */
-
-/*   /\* background-image: conic-gradient(var(--color-primary) 0 12%,var(--color-quaternary) 0 33%,var(--color-secondary) 0 55%,var(--color-tertiary) 0 70%,var(--color-primary) 0 100%); *\/ */
-/*   background-image: linear-gradient(black, black); */
-/*   background-clip: text; */
-/*   color: transparent; */
-
-/*   animation: mark-it linear; */
-/*   animation-fill-mode: forwards; */
-/*   animation-timeline: view(); */
-/*   animation-iteration-count: 1; */
-/*   animation-range: contain 0% contain 25%; */
-/* } */
 
 .magic {
-}
-
-@keyframes mark-it {
-  0% {
-    background-size: 0 100%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
 }
 
 section:last-child {
@@ -221,17 +149,9 @@ section:last-child {
     margin-bottom: 3rem;
 }
 
-/* .period { */
-/*     font-size: 1rem; */
-/* } */
-
 #squiggle {
-    /* float: left; */
-    /* margin-right: 3rem; */
-
     grid-row: 1 / 6;
     height: 100%;
-    /* transform: scaleX(-1); */
 
     background-color: var(--color-primary);
     width: 1rem;
@@ -241,17 +161,11 @@ section:last-child {
     margin-top: 0;
 }
 
-@keyframes puffOut {
-  0% {
-    opacity: 1;
-    transform-origin: 50% 50%;
-    transform: scale(1, 1);
-    -webkit-filter: blur(0px);
-  }
-  100% {
-    opacity: 0;
-    transform-origin: 50% 50%;
-    transform: scale(2, 2);
-    -webkit-filter: blur(2px);
-  }
+.business-name {
+    font-weight: 700;
+    color: #8c8c8c;
+}
+
+#contact-header {
+    margin-bottom: 0;
 }
